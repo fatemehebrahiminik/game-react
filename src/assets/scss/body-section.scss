@@ -1,0 +1,63 @@
+.body-section{
+    height:500px;
+    background-color: #eee;
+    position: relative;
+
+    &--countries{
+        a{
+            font-size: 1rem;
+            border: 0px;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover{
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1.2rem;
+            }
+        }
+        &:last-of-type{
+            height: 95%;
+        }
+
+    }
+    &--country{
+        &_top-left{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        &_top-right{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        &_buttom-left{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        &_buttom-right{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+
+    &--animate{
+        font-size: 1rem;
+        border: 0px;
+        position: relative;
+        animation-duration: 3s;
+        animation-delay: 1s;
+    }
+
+    &--animate-to-middle-button{
+        animation-name: key-frames-middle-button;
+    }
+}
+
+@keyframes key-frames-middle-button {
+    
+    0%   {top:0px;}
+    100% {top:450px;}
+}
